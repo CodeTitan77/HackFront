@@ -103,7 +103,7 @@ const Login = () => {
     <span className="label-text">Password </span>
     
   </div>
-  <input value={password} onChange={(event)=>setPassword(event.target.value)} type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+  <input type="password" value={password} onChange={(event)=>setPassword(event.target.value)}  placeholder="Type here" className="input input-bordered w-full max-w-xs" />
   
 </label>
    {error &&<p className="text-red-500">{error}</p>}
